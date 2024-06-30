@@ -1,0 +1,42 @@
+<h3>Lista de empleados</h3>
+<hr />
+<form (submit)="agregarEmpleado()" class="needs-validation" novalidate>
+    <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre" placeholder="Nombre"
+            [(ngModel)]="empleado.nombre" name="nombre" required>
+        <div class="invalid-feedback">
+            Por favor, ingresa un nombre.
+        </div>
+    </div>
+    <div class="mb-3">
+        <label for="correo" class="form-label">Correo</label>
+        <input type="email" class="form-control" id="correo"
+            placeholder="Correo" [(ngModel)]="empleado.correo" name="correo"
+            required>
+        <div class="invalid-feedback">
+            Por favor, ingresa un correo válido.
+        </div>
+    </div>
+    <div class="mb-3">
+        <label for="telefono" class="form-label">Teléfono</label>
+        <input type="tel" class="form-control" id="telefono"
+            placeholder="Teléfono" [(ngModel)]="empleado.telefono"
+            name="telefono" required>
+        <div class="invalid-feedback">
+            Por favor, ingresa un número de teléfono válido.
+        </div>
+    </div>
+    <div class="mb-3">
+        <label for="fecha_nacimiento" class="form-label">Fecha de
+            nacimiento</label>
+        <input type="date" class="form-control" id="fecha_nacimiento"
+            placeholder="Fecha de nacimiento"
+            [(ngModel)]="empleado.fecha_nacimiento" name="fecha_nacimiento"
+            required>
+        <div class="invalid-feedback">
+            Por favor, selecciona una fecha de nacimiento.
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Agregar</button>
+</form>

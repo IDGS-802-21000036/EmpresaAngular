@@ -15,7 +15,8 @@ export class AgregarEmpleadoComponent {
     nombre: '',
     correo: '',
     telefono: '',
-    fecha_nacimiento: ''
+    fecha_nacimiento: '',
+    sexo: ''
   };
 
   agregarEmpleado(): void {
@@ -29,7 +30,8 @@ export class AgregarEmpleadoComponent {
       nombre: '',
       correo: '',
       telefono: '',
-      fecha_nacimiento: ''
+      fecha_nacimiento: '',
+      sexo: ''
     };
   }
 

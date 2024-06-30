@@ -1,4 +1,5 @@
- <h3>Lista de empleados</h3>
+
+<h3>Lista de empleados</h3>
 <hr />
 <table class="table table-striped">
     <thead>
@@ -8,6 +9,7 @@
             <th>Correo</th>
             <th>Telefono</th>
             <th>Fecha de nacimiento</th>
+            <th>Sexo</th>
             <th>Acciones</th>
         </tr>
     </thead>
@@ -18,9 +20,10 @@
             <td>{{ empleado.correo }}</td>
             <td>{{ empleado.telefono }}</td>
             <td>{{ empleado.fecha_nacimiento }}</td>
+            <td>{{ empleado.sexo }}</td>
             <td>
                 <button class="btn btn-danger"
-                    (click)="eliminarEmpleado(empleado.num)">Eliminar</button>
+                    (click)="eliminarEmpleado(empleado.num)">X</button>
             </td>
         </tr>
     </tbody>

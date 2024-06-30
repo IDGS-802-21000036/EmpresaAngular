@@ -4,4 +4,5 @@ export interface IEmpleado {
     correo: string;
     telefono: string;
     fecha_nacimiento: string;
+    sexo: string;
     }

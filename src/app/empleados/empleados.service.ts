@@ -13,7 +13,11 @@ export class EmpleadosService {
   }
 
   agregarEmpleado(empleado: IEmpleado): void {
-    empleado.num = this._empleados[this._empleados.length - 1].num + 1 || 1;
+    if (this._empleados.length > 0) {
+      empleado.num = this._empleados[this._empleados.length - 1].num + 1;
+    } else {
+      empleado.num = 1;
+    }
 
     this._empleados.push(empleado);
 
